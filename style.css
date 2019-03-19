@@ -1,0 +1,102 @@
+:root {                /* replacement colors */
+    --pink: #BD3E85;     /* mediumvioletred */
+    --blue: #182567;     /* darkslateblue */
+    --dark-blue: #121F40; /* navy */
+    --gold: #D59B2D;     /* goldenrod */
+    --bronze: #8D541E;     /* sienna */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--blue, darkslateblue);
+    color: var(--gold, goldenrod);
+    font-family: serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 50px;
+    width: 100%;
+    background-color: var(--gold, goldenrod);
+    border-bottom: 10px solid var(--bronze, sienna);
+}
+
+nav ul {
+    list-style: none;
+    justify-content: center;
+    margin: 1rem 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark-blue, navy);
+}
+
+nav ul li a:hover {
+    color: var(--bronze, sienna);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home {
+    background-image: url("images/yellow-flowers.jpg");
+}
+
+#timer {
+    background-image: url("images/volcano-eruption.jpg");
+}
+
+#profile {
+    background-image: url("images/northern_lights_iceland.jpg");
+}
+
+#info {
+    background-image: url("images/under-the-sea.jpg");
+}
+
+.background-circle {
+    background-color: var(--gold, goldenrod);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    border: 10px solid var(--bronze, sienna);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: var(--dark-blue, navy);
+    font-size: 2rem;
+}
